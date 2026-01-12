@@ -28,7 +28,6 @@ public class ReviewService {
         review.setAuthorName(dto.getAuthorName());
         review.setRating(dto.getRating());
         review.setComment(dto.getComment());
-        // createdAt is set by default in entity or we can set it here
 
         Review saved = reviewRepository.save(review);
         return mapToDto(saved);

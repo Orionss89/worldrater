@@ -49,7 +49,6 @@ public class AttractionService {
         attractionRepository.deleteById(id);
     }
 
-    // Simple mapper methods (could use MapStruct)
     private AttractionDto mapToDto(Attraction attr) {
         AttractionDto dto = new AttractionDto();
         dto.setId(attr.getId());
